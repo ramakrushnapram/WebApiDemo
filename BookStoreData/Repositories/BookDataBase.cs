@@ -5,10 +5,10 @@ using System.Linq;
 
 namespace BookStoreData.Repositories
 {
-    public class BookBataBase : IBookInterface
+    public class BookDataBase : IBookInterface
     {
         private BookStoreContext db;
-        public BookBataBase(BookStoreContext _db)
+        public BookDataBase(BookStoreContext _db)
         {
             this.db = _db;
         }

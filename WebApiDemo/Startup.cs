@@ -29,7 +29,7 @@ namespace WebApiDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IBookInterface, BookBataBase>();
+            services.AddScoped<IBookInterface, BookDataBase>();
             var connection = @" Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Lenovo\Documents\BookStore.mdf; Integrated Security = True; Connect Timeout = 30";
 
             services.AddDbContext<BookStoreContext>(options => options.UseSqlServer(connection));
