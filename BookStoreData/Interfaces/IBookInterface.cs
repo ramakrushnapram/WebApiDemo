@@ -1,16 +1,19 @@
 ﻿using BookStoreData.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BookStoreData.Interfaces
 {
-   public interface IBookInterface
+    public interface IBookInterface
     {
         List<Book> GetAllBooks();
 
         Book GetBook(int id);
 
+        bool AddNewBook(Book book);
+
+        bool RemoveBook(int id);
+
+        List<Book> UpdateBook(int id, Book book);
 
     }
 }

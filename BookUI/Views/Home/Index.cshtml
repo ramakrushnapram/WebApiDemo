@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Library";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Inputs</h2>
+        <input type="text" name="id" id="id" class="form-control" placeholder="Id" />
+        <input type="text" name="title" id="title" class="form-control" placeholder="Title" />
+        <input type="text" name="author" id="author" class="form-control" placeholder="Author" />
+        <input type="text" name="publicationYear" id="publicationYear" class="form-control" placeholder="PublicationYear" />
+        <input type="text" name="isAvilable" id="isAvilable" class="form-control" placeholder="IsAvilable" />
+        <input type="text" name="callNumber" id="callNumber" class="form-control" placeholder="CallNumber" />
+    </div>
+
+    <div class="col-md-3">
+        <h2>Actions</h2>
+        <button type="button" id="GetAll" class="btn btn-default">Get All books</button>
+        <br />
+        <br />
+        <button type="button" id="GetById" class="btn btn-default">Get Book by  ID</button>
+        <br />
+        <br />
+        <button type="button" id="AddBook" class="btn btn-default">Add a book</button>
+        <br />
+        <br />
+        <button type="button" id="UpdateBook" class="btn btn-default">Update  book</button>
+
+    </div>
+
+    <div class="col-md-4">
+        <h2>Input Cost</h2>
+        <input type="text" name="Bookid" id="Bookid" class="form-control" placeholder="Bookid" />
+        <input type="text" name="price" id="price" class="form-control" placeholder="Price" />
+        <input type="text" name="DiscountCode" id="DiscountCode" class="form-control" placeholder="Discount ?(true or false)" />
+        <br />
+        <button type="button" id="AddCost" class="btn btn-default">Add Cost to  book</button>
+        
+    </div>
+
+</div>
+<p></p>
+
+<div class="row">
+    <div>
+        <table id="customerTable" border="0" cellpadding="10">
+
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>publicationYear</th>
+                <th>IsAvilable</th>
+                <th>CallNumber</th>
+                <th>CostId</th>
+                <th>Price</th>
+                <th>DiscountCode</th>
+           </tr>
+        </table>
+    </div>
+</div>
